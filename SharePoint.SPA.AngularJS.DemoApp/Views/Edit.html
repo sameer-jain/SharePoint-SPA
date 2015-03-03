@@ -1,0 +1,43 @@
+﻿<div ng-controller="EditFormCtrl">
+    <table>
+        <tr>
+            <td>First Name : </td>
+            <td>
+                <input type="text" id="firstName" ng-model="EmployeeItem.Title" value="" ng-disabled="isDisabled">
+            </td>
+        </tr>
+        <tr>
+            <td>Last Name :  </td>
+            <td>
+                <input type="text" id="lastName" ng-model="EmployeeItem.LastName" value="" ng-disabled="isDisabled">
+            </td>
+        </tr>
+        <tr>
+            <td>Mobile Number :  </td>
+            <td>
+                <input type="text" id="mobile" ng-model="EmployeeItem.MobileNumber" value="" ng-disabled="isDisabled">
+            </td>
+        </tr>
+        <tr>
+            <td>Email  :  </td>
+            <td>
+                <input type="text" id="email" ng-model="EmployeeItem.Email" value="" ng-disabled="isDisabled">
+            </td>
+        </tr>
+        <tr>
+            <td>Job Title :  </td>
+            <td>
+                <input type="text" id="jobTitle" ng-model="EmployeeItem.JobTitle" value="" ng-disabled="isDisabled">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button ng-click="updateClick($event)" ng-disabled="isDisabled">Update</button>
+            </td>
+            <td>
+                <button ng-click="cancelClick($event)" ng-disabled="isDisabled">Cancel</button>
+            </td>
+        </tr>
+    </table>
+
+</div>

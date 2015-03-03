@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Type="ElementManifest" />
+    <ProjectItemFile Source="Views\Add.html" Target="Views\" Type="ElementFile" />
+    <ProjectItemFile Source="Views\Edit.html" Target="Views\" Type="ElementFile" />
+    <ProjectItemFile Source="Views\List.html" Target="Views\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

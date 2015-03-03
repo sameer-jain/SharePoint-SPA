@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E8D99C04-9088-4171-AD7F-4F0C52E04E90}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SharePoint.SPA.AngularJS.DemoApp</RootNamespace>
+    <AssemblyName>SharePoint.SPA.AngularJS.DemoApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+    <ProjectMode>SharePointApp</ProjectMode>
+    <AppFeaturePartId>{78d805fe-0394-457a-86b2-6e03248de749}</AppFeaturePartId>
+    <WspPartId>{441c2a8d-547a-491a-8b56-572dfb8160d6}</WspPartId>
+    <WorkflowPartId>{07bc5972-8a6e-439b-986d-cddcefee16c1}</WorkflowPartId>
+    <CspkgPartId>{2dd6640e-4b82-47f5-aaf9-ff559f03a5f4}</CspkgPartId>
+    <SqlPackagePartId>{79f80e27-df1f-4ff7-b1b3-3c8a12f3df54}</SqlPackagePartId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="Content\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f2f06a80-5fc2-45b5-85ee-cc8803804a41}</SharePointProjectItemId>
+    </None>
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{40318823-badd-49a6-9d4b-120761ba5ab6}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\EmployeeList\EmployeeListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9a2dc7ac-d9a3-4169-b1cc-ad8f6ed30832}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\EmployeeList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{dd6a5749-a6e4-4bd9-88e8-417b577c3fe8}</SharePointProjectItemId>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9e97fb36-e553-4b7f-9465-597a00aa4db3}</SharePointProjectItemId>
+    </None>
+    <None Include="Scripts\jquery-1.10.2.min.map" />
+    <None Include="Scripts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{026ab2e5-6e3f-430f-ab0f-7cfc5bb7576e}</SharePointProjectItemId>
+    </None>
+    <None Include="SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{533b9e67-a3a8-4fed-8915-7dc6ffcdc5c7}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package\Package.package">
+      <PackageId>{75744885-a8d2-4e14-a1f3-da523206f94e}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Features\SharePoint.SPA.AngularJS.DemoApp\SharePoint.SPA.AngularJS.DemoApp.feature">
+      <FeatureId>{9786ca91-5f24-4fd0-9269-cd5813ecd899}</FeatureId>
+    </None>
+    <None Include="Features\SharePoint.SPA.AngularJS.DemoApp\SharePoint.SPA.AngularJS.DemoApp.Template.xml">
+      <DependentUpon>SharePoint.SPA.AngularJS.DemoApp.feature</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <AppManifestFile Include="AppManifest.xml">
+      <SubType>Designer</SubType>
+    </AppManifestFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\App.css" />
+    <Content Include="Content\Elements.xml" />
+    <Content Include="Elements.xml" />
+    <Content Include="Images\AppIcon.png" />
+    <Content Include="Images\Elements.xml" />
+    <Content Include="Lists\EmployeeList\Elements.xml" />
+    <Content Include="Lists\EmployeeList\EmployeeListInstance\Elements.xml" />
+    <Content Include="Lists\EmployeeList\Schema.xml" />
+    <Content Include="Pages\Elements.xml" />
+    <Content Include="Pages\Employee.aspx" />
+    <Content Include="Scripts\angular-route.js" />
+    <Content Include="Scripts\angular-route.min.js" />
+    <Content Include="Scripts\angular.js" />
+    <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\App.js" />
+    <Content Include="Scripts\Elements.xml" />
+    <Content Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Views\Add.html" />
+    <Content Include="Views\Edit.html" />
+    <Content Include="Views\List.html" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

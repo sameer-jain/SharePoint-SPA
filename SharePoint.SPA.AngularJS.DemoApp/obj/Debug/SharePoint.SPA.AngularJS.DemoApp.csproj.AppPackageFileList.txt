@@ -1,0 +1,1 @@
+E:\Sameer\SharePoint.SPA.AngularJS.DemoApp\SharePoint.SPA.AngularJS.DemoApp\bin\Debug\app.publish\1.0.0.0\SharePoint.SPA.AngularJS.DemoApp.app

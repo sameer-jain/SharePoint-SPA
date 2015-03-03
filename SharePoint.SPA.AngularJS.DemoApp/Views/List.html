@@ -1,0 +1,43 @@
+﻿<div data-ng-controller="ListFormCtrl">
+    
+    <table class="gridtable table">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Mobile Number</th>
+                <th>Email</th>
+                <th>Job Title</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr data-ng-repeat="item in EmployeeItems">
+                <td>{{item.Title}}</td>
+                <td>{{item.LastName}}</td>
+                <td>{{item.MobileNumber}}</td>
+                <td>{{item.Email}}</td>
+                <td>{{item.JobTitle}}</td>
+                <td><a  href="#/Edit/{{item.ID}}">Edit</a>/<a data-ng-click="deleteItem(item,$event)" href="#">Delete</a></td>
+            </tr>
+    </table>
+    <table>
+        <tr ng-class="{false:'noItemFound', true:'itemFound'}[isItemExists]">
+            <td>
+                <label>There are no items to show in this view.</label>
+            </td>
+        </tr>
+    </table>   
+    <table dir="none" cellpadding="0" cellspacing="0" border="0">
+        <tbody>
+            <tr>
+                <td>
+                    <a href="#/Add" title="Add New Employee" class="ms-heroCommandLink" style="border: 1px solid; padding: 3px;font-weight:bold;">                        
+                        <span>Add new Employee</span>
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
